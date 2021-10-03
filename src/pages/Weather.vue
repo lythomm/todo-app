@@ -11,7 +11,7 @@
     <template v-if="weatherData">
       <div class="col text-white text-center">
         <div class="text-h4 text-weight-light">
-          {{weatherData.name}}
+          {{weatherData.name}} | {{weatherData.sys.country}}
         </div>
         <div class="text-h6 text-weight-light">
           {{weatherData.weather[0].main}}
@@ -64,6 +64,9 @@ export default {
       }
     }
   },
+  mounted () {
+    this.getLocation()
+  },
   methods: {
     getLocation () {
       this.$q.loading.show()
@@ -100,6 +103,7 @@ export default {
     getWeatherBySearch() {
       this.$q.loading.show()
       axios.get(`${ this.apiUrl }?q=${this.search}&appid=${this.apiKey}&units=metrics`).then(response => {
+        console.log(response.data)
         this.weatherData = response.data
         this.$q.loading.hide()
       }).catch(e => {
@@ -110,7 +114,7 @@ export default {
         })
       })
       this.search = ''
-    },
+    }
   }
 }
 </script>
