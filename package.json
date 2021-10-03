@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "axios": "^0.22.0",
+    "cordova": "^10.0.0",
     "core-js": "^3.6.5",
+    "ionic": "^5.4.16",
     "quasar": "^2.0.0",
     "vuex": "^4.0.2"
   },
@@ -19,6 +22,7 @@
     "@babel/eslint-parser": "^7.13.14",
     "@quasar/app": "^3.0.0",
     "electron": "^15.1.0",
+    "electron-packager": "^15.4.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-prettier-standard": "^4.0.1",

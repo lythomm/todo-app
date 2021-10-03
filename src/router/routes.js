@@ -8,7 +8,13 @@ const routes = [
       { path: '/help', component: () => import('pages/Help.vue') },
       { path: '/settings', component: () => import('pages/Settings.vue') },
       { path: '/info', component: () => import('pages/Info.vue') },
-      { path: '/note', component: () => import('pages/Note.vue') },
+      { path: '/note', component: () => import('pages/Note.vue') }
+    ]
+  },
+  {
+    path: '/weather',
+    component: () => import('layouts/WeatherLayout.vue'),
+    children: [
       { path: '/weather', component: () => import('pages/Weather.vue') }
     ]
   },

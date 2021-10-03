@@ -13,7 +13,7 @@
     </div>
     <div class="text-justify">
       <p>email : lythomm@gmail.com</p>
-      <p>github : Biinod81</p>
+      <p>github : lythomm</p>
     </div>
   </q-page>
 </template>
