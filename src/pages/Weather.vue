@@ -64,9 +64,9 @@ export default {
       }
     }
   },
-  mounted () {
-    this.getLocation()
-  },
+  // mounted () {
+  //   this.getLocation()
+  // },
   methods: {
     getLocation () {
       this.$q.loading.show()

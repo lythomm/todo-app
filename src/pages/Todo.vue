@@ -66,7 +66,7 @@ export default {
     },
     deleteTask(index) {
       this.removeTask(index)
-      this.$q.notify('Tâche supprimée')
+      this.$q.notify('Task deleted')
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.getTasks))
     },
     onTaskStatusToggle(index) {
